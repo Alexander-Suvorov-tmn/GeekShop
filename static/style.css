@@ -1085,27 +1085,6 @@ td:first-child {
 }
 
 .login .head {
-    margin: 25px auto;
-}
-
-.login form {
-    margin-bottom: 30px;
-}
-
-.login {
-    background: #fff;
-    border: 1px solid #eaeaea;
-    border-radius: 25px;
-    overflow: hidden;
-    width: 28em;
-    min-width: 500px;
-    margin: 100px auto;
-       
-    position: relative;
-    display: block;
-}
-
-.login .head {
     margin: 15px auto;
 }
 
