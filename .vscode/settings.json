@@ -3,8 +3,8 @@
     "python.languageServer": "Pylance",
     "python.experiments.optOutFrom": ["All"],
     "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontSize": 17,
-    "terminal.integrated.fontSize": 17,
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 14,
     "python.formatting.provider": "black",
     "python.formatting.blackArgs": [
         "-l 120"
