@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     "mainapp",
     "authnapp",
     "basketapp",
-    'adminapp',
-    "social_django",
+    "adminapp",
+    "social_django",    
 ]
 
 # Auth model
