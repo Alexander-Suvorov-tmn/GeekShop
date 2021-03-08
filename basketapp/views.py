@@ -1,14 +1,19 @@
+<<<<<<< HEAD
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 from django.shortcuts import HttpResponseRedirect, get_object_or_404, render
 from django.template.loader import render_to_string
 from django.urls import reverse
+=======
+from django.shortcuts import HttpResponseRedirect, get_object_or_404, render
+>>>>>>> master
 
 from basketapp.models import Basket
 from mainapp.models import Product
 
 
+<<<<<<< HEAD
 @login_required
 def basket(request):
     title = "корзина"
@@ -21,6 +26,15 @@ def basket(request):
 def basket_add(request, pk):
     if "login" in request.META.get("HTTP_REFERER"):
         return HttpResponseRedirect(reverse("products:product", args=[pk]))
+=======
+def basket(request):
+    # content = {}
+    # return render(request, "basketapp/basket.html", content)
+    return HttpResponseRedirect(request.META.get("HTTP_REFERER"))
+
+
+def basket_add(request, pk):
+>>>>>>> master
     product = get_object_or_404(Product, pk=pk)
     basket = Basket.objects.filter(user=request.user, product=product).first()
 
@@ -33,6 +47,7 @@ def basket_add(request, pk):
     return HttpResponseRedirect(request.META.get("HTTP_REFERER"))
 
 
+<<<<<<< HEAD
 @login_required
 def basket_remove(request, pk):
     basket_record = get_object_or_404(Basket, pk=pk)
@@ -64,3 +79,9 @@ def basket_edit(request, pk, quantity):
         result = render_to_string("basketapp/includes/inc_basket_list.html", content)
 
         return JsonResponse({"result": result})
+=======
+def basket_remove(request):
+    # content = {}
+    # return render(request, "basketapp/basket.html", content)
+    return HttpResponseRedirect(request.META.get("HTTP_REFERER"))
+>>>>>>> master

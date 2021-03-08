@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "python.pythonPath": "/home/alexandr/.pyenv/versions/3.8.6/envs/geekshop/bin/python",
     "python.languageServer": "Pylance",
     "python.experiments.optOutFrom": ["All"],
@@ -17,4 +18,19 @@
         "**/.DS_Store": true,
         "**/__pycache__": true,
     }
+=======
+    "python.pythonPath": "/home/alexanders/Рабочий стол/djb/venv/bin/python",
+    "python.languageServer": "Pylance",
+    "python.experiments.optOutFrom": ["All"],
+    "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    "python.linting.pylintEnabled": false,
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "-l 120"
+    ]
+>>>>>>> master
 }
