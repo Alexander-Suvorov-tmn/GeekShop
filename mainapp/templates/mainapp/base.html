@@ -10,10 +10,17 @@
         {{ title|capfirst }}
         {% endblock title %}
     </title>
+<<<<<<< HEAD
+
+    {% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+=======
     
     {% block css %}
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
     <link rel="stylesheet" href="{% static 'fonts/font-awesome/css/font-awesome.css' %}">
+>>>>>>> master
     {% endblock css %}
 
     {% block js %}
@@ -28,8 +35,13 @@
         {% endblock menu %}
 
         <div class="content">
+<<<<<<< HEAD
+            {% block content %}
+            {% endblock content %}
+=======
         {% block content %}
         {% endblock content %}
+>>>>>>> master
         </div>
 
     </div>
@@ -52,7 +64,11 @@
                 </form>
             </div>
         </div>
+<<<<<<< HEAD
+        <p class="small">&copy; GB {% now "Y" %}</p>
+=======
         <p class="small">&copy; GB 2017</p>
+>>>>>>> master
         <div class="social">
             <a href="#" class="social1"></a>
             <a href="#" class="social2"></a>
@@ -64,3 +80,8 @@
     {% endblock %}
 
 </body>
+<<<<<<< HEAD
+
+</html>
+=======
+>>>>>>> master
