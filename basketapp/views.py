@@ -20,6 +20,7 @@ def basket(request):
 from django.db import connection
 from django.db.models import F
 
+
 @login_required
 def basket_add(request, pk):
     if "login" in request.META.get("HTTP_REFERER"):
